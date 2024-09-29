@@ -1,0 +1,16 @@
+[package]
+name = "translate"
+version = "0.0.1"
+edition2024 = "2024"
+
+[profile.dev]
+debug = true
+
+[dependencies]
+nix = {version="0.29.0", features=["process", "signal"]}
+sysinfo = "0.31.4"
+libc = "0.2.159"
+
+[[bin]]
+name = "translate"
+path = "translate.rs"
